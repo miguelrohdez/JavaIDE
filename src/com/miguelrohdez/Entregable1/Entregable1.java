@@ -12,8 +12,8 @@ public class Entregable1 {
         c = 2;
         for (i = 0; i <matriz2D.length ; i++) {
             for (j = 0; j <matriz2D.length ; j++) {
-                //System.out.println("i= "+i+"\tj= " + j + " => "+c);
-                System.out.println((matriz2D[i][j] = c)+" ");
+                System.out.println("i= "+i+"\tj= " + j + " => "+c);
+                matriz2D[i][j] = c;
                 c=c+2;
             }
 
