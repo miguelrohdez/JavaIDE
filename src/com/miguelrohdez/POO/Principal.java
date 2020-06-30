@@ -31,19 +31,25 @@ public class Principal {
         series[3].tiempoVisto(3060);
         series[4].tiempoVisto(4187);
 
-        System.out.println("****************** Mostrando Peliculas ******************");
+        System.out.println("****************** Mostrando todas las Peliculas y Series ******************");
 
-        for (Pelicula todasPelis : peliculas) {
+        for (Pelicula todasPelis : peliculas)
             todasPelis.toString();
-
-        }
-
-        System.out.println("****************** Mostrando Series ******************");
-
-        for (Serie todasSeries : series) {
+        for (Serie todasSeries : series)
             todasSeries.toString();
 
-        }
+
+        System.out.println("****************** Mostrando todas las Peliculas y Series que se visualizaron ******************");
+
+        for (Pelicula todasPelis : peliculas)
+            if(todasPelis.getVisto())
+                todasPelis.toString();
+
+        for (Serie todasSeries : series)
+            if(todasSeries.getVisto())
+                todasSeries.toString();
+
+
 
         System.out.println("\n****************** Series con mas temporardas ******************");
         int serieMasTemp =0;
